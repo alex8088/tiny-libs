@@ -1,0 +1,30 @@
+{
+  "name": "@tiny-libs/xhr",
+  "version": "1.0.0-alpha.0",
+  "description": "Tiny HTTP client for the browser.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/tiny-libs.git",
+    "directory": "packages/xhr"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/tiny-libs/issues"
+  },
+  "homepage": "https://github.com/alex8088/tiny-libs/tree/master/packages/xhr#readme",
+  "keywords": [
+    "xhr",
+    "ajax"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsup src/index.ts --dts --format esm,iife"
+  }
+}
