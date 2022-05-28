@@ -14,7 +14,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js $1"
+    "commit-msg": "npx commit-lint $1"
   },
   "lint-staged": {
     "*.js": [
@@ -26,6 +26,7 @@
     ]
   },
   "devDependencies": {
+    "@alexwei/commit-lint": "^1.0.0",
     "@types/node": "^16.11.19",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
