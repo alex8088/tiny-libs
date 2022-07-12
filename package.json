@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "lint": "eslint --ext .ts packages/*/src/**",
     "typecheck": "tsc --noEmit",
-    "build:xhr": "cd packages/xhr && npm run build"
+    "build:xhr": "pnpm run -C packages/xhr build"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
