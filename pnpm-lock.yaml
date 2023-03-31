@@ -15,7 +15,6 @@ importers:
       lint-staged: ^13.2.0
       picocolors: ^1.0.0
       prettier: ^2.8.7
-      rimraf: ^3.0.2
       simple-git-hooks: ^2.8.1
       tslib: ^2.5.0
       tsup: ^6.7.0
@@ -32,7 +31,6 @@ importers:
       lint-staged: 13.2.0
       picocolors: 1.0.0
       prettier: 2.8.7
-      rimraf: 3.0.2
       simple-git-hooks: 2.8.1
       tslib: 2.5.0
       tsup: 6.7.0_typescript@4.9.5

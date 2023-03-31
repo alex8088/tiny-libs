@@ -25,6 +25,6 @@
     "ajax"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup src/index.ts --dts --format esm,iife"
+    "build": "tsup src/index.ts --clean --dts --format esm,iife"
   }
 }
