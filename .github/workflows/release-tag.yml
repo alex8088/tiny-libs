@@ -2,6 +2,7 @@ on:
   push:
     tags:
       - 'xhr*'
+      - 'typed-event-emitter*'
 
 name: Create Release
 
