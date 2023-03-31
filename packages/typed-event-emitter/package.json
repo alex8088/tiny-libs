@@ -1,0 +1,38 @@
+{
+  "name": "@tiny-libs/typed-event-emitter",
+  "version": "1.0.0-alpha.0",
+  "description": "Tiny type-safe event emitter for Node.js.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/tiny-libs.git",
+    "directory": "packages/typed-event-emitter"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/tiny-libs/issues"
+  },
+  "homepage": "https://github.com/alex8088/tiny-libs/tree/master/packages/typed-event-emitter#readme",
+  "keywords": [
+    "event-emitter",
+    "emitter",
+    "typescript",
+    "type-safe"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  }
+}
