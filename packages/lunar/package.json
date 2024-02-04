@@ -1,6 +1,6 @@
 {
   "name": "@tiny-libs/lunar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny lunar calendar conversion tool.",
   "main": "dist/index.global.js",
   "module": "dist/index.mjs",
