@@ -3,6 +3,7 @@ on:
     tags:
       - 'xhr*'
       - 'typed-event-emitter*'
+      - 'lunar*'
 
 name: Create Release
 
