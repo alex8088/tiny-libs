@@ -11,7 +11,9 @@
     "lint": "eslint --ext .ts packages/*/src/**",
     "typecheck": "tsc --noEmit",
     "build:xhr": "pnpm run -C packages/xhr build",
-    "build:tee": "pnpm run -C packages/typed-event-emitter build"
+    "build:tee": "pnpm run -C packages/typed-event-emitter build",
+    "build:lunar": "pnpm run -C packages/lunar build",
+    "test:lunar": "pnpm run -C packages/lunar test"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",

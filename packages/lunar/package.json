@@ -1,0 +1,32 @@
+{
+  "name": "@tiny-libs/lunar",
+  "version": "0.0.0",
+  "description": "Tiny lunar calendar conversion tool.",
+  "main": "dist/index.global.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/tiny-libs.git",
+    "directory": "packages/lunar"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/tiny-libs/issues"
+  },
+  "homepage": "https://github.com/alex8088/tiny-libs/tree/master/packages/lunar#readme",
+  "keywords": [
+    "lunar",
+    "solar",
+    "calendar"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean --dts --format esm,iife",
+    "test": "node test.mjs"
+  }
+}
