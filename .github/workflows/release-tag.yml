@@ -4,6 +4,7 @@ on:
       - 'xhr*'
       - 'typed-event-emitter*'
       - 'lunar*'
+      - 'nls*'
 
 name: Create Release
 

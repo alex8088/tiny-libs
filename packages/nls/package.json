@@ -1,0 +1,32 @@
+{
+  "name": "@tiny-libs/nls",
+  "version": "0.0.0",
+  "description": "Tiny internationalization library.",
+  "main": "dist/index.global.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/tiny-libs.git",
+    "directory": "packages/nls"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/tiny-libs/issues"
+  },
+  "homepage": "https://github.com/alex8088/tiny-libs/tree/master/packages/nls#readme",
+  "keywords": [
+    "localization",
+    "i18n",
+    "nls"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean --dts --format esm,iife",
+    "test": "node test.mjs"
+  }
+}
