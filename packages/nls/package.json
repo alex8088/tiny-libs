@@ -1,6 +1,6 @@
 {
   "name": "@tiny-libs/nls",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny internationalization library.",
   "main": "dist/index.global.js",
   "module": "dist/index.mjs",
