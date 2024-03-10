@@ -2,10 +2,16 @@
   "name": "@tiny-libs/nls",
   "version": "1.0.0",
   "description": "Tiny internationalization library.",
-  "main": "dist/index.global.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "unpkg": "dist/index.global.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -26,7 +32,7 @@
     "nls"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --clean --dts --format esm,iife",
+    "build": "unbuild",
     "test": "node test.mjs"
   }
 }
