@@ -5,6 +5,7 @@ on:
       - 'typed-event-emitter*'
       - 'lunar*'
       - 'nls*'
+      - 'time*'
 
 name: Create Release
 

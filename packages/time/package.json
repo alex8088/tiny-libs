@@ -1,0 +1,50 @@
+{
+  "name": "@tiny-libs/time",
+  "version": "0.0.0",
+  "description": "Tiny date/time formatting library.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./zh": {
+      "types": "./dist/locales/zh-CN.d.ts",
+      "import": "./dist/locales/zh-CN.mjs",
+      "require": "./dist/locales/zh-CN.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "zh": [
+        "./dist/locales/zh-CN.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/tiny-libs.git",
+    "directory": "packages/time"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/tiny-libs/issues"
+  },
+  "homepage": "https://github.com/alex8088/tiny-libs/tree/master/packages/time#readme",
+  "keywords": [
+    "time ago",
+    "format"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "test": "node test.mjs"
+  }
+}
