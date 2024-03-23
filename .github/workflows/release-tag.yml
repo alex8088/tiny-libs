@@ -6,6 +6,7 @@ on:
       - 'lunar*'
       - 'nls*'
       - 'time*'
+      - 'storage*'
 
 name: Create Release
 

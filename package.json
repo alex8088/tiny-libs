@@ -15,6 +15,7 @@
     "build:lunar": "pnpm run -C packages/lunar build",
     "build:nls": "pnpm run -C packages/nls build",
     "build:time": "pnpm run -C packages/time build",
+    "build:storage": "pnpm run -C packages/storage build",
     "test:lunar": "pnpm run -C packages/lunar test",
     "test:nls": "pnpm run -C packages/nls test",
     "test:time": "pnpm run -C packages/time test"
