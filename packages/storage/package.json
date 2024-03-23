@@ -1,6 +1,6 @@
 {
   "name": "@tiny-libs/storage",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny serializable web storage library.",
   "type": "module",
   "main": "dist/index.mjs",
