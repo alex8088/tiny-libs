@@ -50,13 +50,37 @@ function format(
   return result
 }
 
-function createLocalizeFunc(messages: Record<string, string>): LocalizeFunc {
+function findNestedObject(
+  obj: Record<string, unknown>,
+  key: string
+): string | undefined {
+  const value = obj[key]
+
+  if (value !== undefined && typeof value === 'string') {
+    return value
+  }
+
+  const keys = key.split('.')
+  let result: string | Record<string, unknown> = obj
+
+  for (const k of keys) {
+    if (result[k] !== undefined) {
+      result = result[k]
+    } else {
+      return undefined
+    }
+  }
+
+  return typeof result === 'string' ? result : undefined
+}
+
+function createLocalizeFunc(messages: Record<string, unknown>): LocalizeFunc {
   return function (key: string, message: string, ...args: any[]): string {
-    return format(messages[key] || message, args)
+    return format(findNestedObject(messages, key) || message, args)
   }
 }
 
-function loadMessages(messages: Record<string, string> = {}): LocalizeFunc {
+function loadMessages(messages: Record<string, unknown> = {}): LocalizeFunc {
   return createLocalizeFunc(messages)
 }
 
